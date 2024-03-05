@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Pesquisa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Formulário de Pesquisa</h1>
+  <p id="description">Preencha este formulário para nos ajudar a melhorar nossos serviços.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+    <br>
+    <label for="email" id="email-label">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu endereço de e-mail" required>
+    <br>
+    <label for="number" id="number-label">Número:</label>
+    <input type="number" id="number" name="number" min="1" max="100" placeholder="Digite um número entre 1 e 100">
+    <br>
+    <label for="dropdown" id="dropdown-label">Selecione uma opção:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="opcao1">Opção 1</option>
+      <option value="opcao2">Opção 2</option>
+      <option value="opcao3">Opção 3</option>
+    </select>
+    <br>
+    <p>Qual sua opinião sobre nosso serviço?</p>
+    <input type="radio" id="opiniao1" name="opiniao" value="bom">
+    <label for="opiniao1">Bom</label>
+    <br>
+    <input type="radio" id="opiniao2" name="opiniao" value="regular">
+    <label for="opiniao2">Regular</label>
+    <br>
+    <input type="radio" id="opiniao3" name="opiniao" value="ruim">
+    <label for="opiniao3">Ruim</label>
+    <br>
+    <br>
+    <p>Comentários adicionais:</p>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    <br>
+
+    <!-- Adicione checkboxes com atributos de valor -->
+    <p>Selecione pelo menos duas opções:</p>
+    <input type="checkbox" id="checkbox1" name="checkbox[]" value="opcao1">
+    <label for="checkbox1">Opção 1</label>
+    <br>
+    <input type="checkbox" id="checkbox2" name="checkbox[]" value="opcao2">
+    <label for="checkbox2">Opção 2</label>
+    <br>
+    <input type="checkbox" id="checkbox3" name="checkbox[]" value="opcao3">
+    <label for="checkbox3">Opção 3</label>
+    <br>
+
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+</body>
+</html>
